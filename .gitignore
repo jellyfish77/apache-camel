@@ -1,6 +1,3 @@
-# OQ
-bin/
-
 # Compiled class file
 *.class
 
@@ -25,4 +22,14 @@ bin/
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+#Maven
+.logs
+*.iml
+.idea/
+
+#ignore dirs in root
 /.metadata/
+
+#ignore dirs recursive
+target/
+bin/
