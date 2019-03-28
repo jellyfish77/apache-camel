@@ -42,6 +42,7 @@
 	<!-- Camel route setup -->
 	<camel:camelContext
 		xmlns="http://camel.apache.org/schema/spring">
+		
 		<!-- This route will simply insert sample data and not dependent on other 
 			routes. -->
 		<route id="sample-generator-route">
@@ -75,6 +76,7 @@
 				<to uri="direct:updateDone" />
 			</split>
 		</route>
+		
 		<route id="query-update-route-part2">
 			<from uri="direct:updateDone" />
 			<setHeader headerName="camelTestId">
